@@ -63,7 +63,7 @@ class MailgunTestCase extends TestCase
      */
     protected function getPackageProviders($app)
     {
-        return ['Bogardo\Mailgun\MailgunServiceProvider'];
+        return ['Nmireac\Mailgun\MailgunServiceProvider'];
     }
 
     /**
@@ -71,7 +71,7 @@ class MailgunTestCase extends TestCase
      */
     protected function getPackageAliases($app)
     {
-        return ['Mailgun' => 'Bogardo\Mailgun\Facades\Mailgun'];
+        return ['Mailgun' => 'Nmireac\Mailgun\Facades\Mailgun'];
     }
 
     protected function getSuccessResponse()

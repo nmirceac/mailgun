@@ -1,6 +1,6 @@
 <?php
 
-namespace Bogardo\Mailgun\Contracts;
+namespace Nmireac\Mailgun\Contracts;
 
 use Closure;
 
@@ -12,7 +12,7 @@ interface Mailgun
      * @param array        $data
      * @param \Closure     $callback
      *
-     * @return \Bogardo\Mailgun\Http\Response
+     * @return \Nmireac\Mailgun\Http\Response
      */
     public function send($view, array $data, Closure $callback);
 
@@ -20,7 +20,7 @@ interface Mailgun
      * @param string   $message
      * @param \Closure $callback
      *
-     * @return \Bogardo\Mailgun\Http\Response
+     * @return \Nmireac\Mailgun\Http\Response
      */
     public function raw($message, Closure $callback);
 
@@ -30,7 +30,7 @@ interface Mailgun
      * @param array            $data
      * @param \Closure         $callback
      *
-     * @return \Bogardo\Mailgun\Http\Response
+     * @return \Nmireac\Mailgun\Http\Response
      */
     public function later($time, $view, array $data, Closure $callback);
 }

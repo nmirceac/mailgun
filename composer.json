@@ -38,7 +38,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Bogardo\\Mailgun\\": "src"
+            "Nmirceac\\Mailgun\\": "src"
         }
     },
     "autoload-dev": {
@@ -58,10 +58,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mailgun\\MailgunServiceProvider"
+                "Nmirceac\\Mailgun\\MailgunServiceProvider"
             ],
             "aliases": {
-                "Mailgun": "\\Mailgun\\Facades\\Mailgun"
+                "Mailgun": "\\Nmirceac\\Mailgun\\Facades\\Mailgun"
             }
         }
     }
