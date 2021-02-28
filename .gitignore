@@ -1,0 +1,4 @@
+vendor/
+composer.lock
+coverage_html/
+.idea
