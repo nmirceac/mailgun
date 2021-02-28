@@ -1,5 +1,5 @@
 {
-    "name": "bogardo/mailgun",
+    "name": "nmirceac/mailgun",
     "description": "Laravel package for sending mail via the Mailgun API",
     "keywords": [
         "mailgun",
@@ -10,7 +10,7 @@
         "attachData",
         "revival"
     ],
-    "homepage": "https://github.com/Bogardo/Mailgun",
+    "homepage": "https://github.com/nmirceac/mailgun",
     "license": "MIT",
     "authors": [
         {
@@ -58,10 +58,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Bogardo\\Mailgun\\MailgunServiceProvider"
+                "Mailgun\\MailgunServiceProvider"
             ],
             "aliases": {
-                "Mailgun": "Bogardo\\Mailgun\\Facades\\Mailgun"
+                "Mailgun": "\\Mailgun\\Facades\\Mailgun"
             }
         }
     }
