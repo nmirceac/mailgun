@@ -1,6 +1,6 @@
 <?php
 
-namespace Nmireac\Mailgun\Validation;
+namespace Nmirceac\Mailgun\Validation;
 
 use Mailgun\Mailgun;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nmireac\Mailgun\Facades;
+namespace Nmirceac\Mailgun\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

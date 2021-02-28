@@ -1,8 +1,8 @@
 <?php
 
-namespace Nmireac\Mailgun\Mail;
+namespace Nmirceac\Mailgun\Mail;
 
-use Nmireac\Mailgun\Http\Response;
+use Nmirceac\Mailgun\Http\Response;
 use Carbon\Carbon;
 use Closure;
 use Illuminate\Contracts\Config\Repository as Config;
@@ -52,7 +52,7 @@ class Mailer
      * @param \Closure     $callback
      * @param null         $message
      *
-     * @return \Nmireac\Mailgun\Http\Response
+     * @return \Nmirceac\Mailgun\Http\Response
      */
     public function send($view, array $data, Closure $callback, $message = null)
     {
@@ -76,7 +76,7 @@ class Mailer
      * @param array                      $data
      * @param \Closure                   $callback
      *
-     * @return \Nmireac\Mailgun\Http\Response
+     * @return \Nmirceac\Mailgun\Http\Response
      */
     public function later($time, $view, array $data, Closure $callback)
     {
@@ -91,7 +91,7 @@ class Mailer
      * Call the provided message builder.
      *
      * @param \Closure                      $callback
-     * @param \Nmireac\Mailgun\Mail\Message $message
+     * @param \Nmirceac\Mailgun\Mail\Message $message
      *
      * @return mixed
      */

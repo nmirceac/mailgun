@@ -1,6 +1,6 @@
 <?php
 
-namespace Nmireac\Mailgun\Mail;
+namespace Nmirceac\Mailgun\Mail;
 
 use Illuminate\Contracts\Config\Repository as Config;
 use Mailgun\Messages\MessageBuilder;
@@ -56,7 +56,7 @@ class Message
      * @param string       $name
      * @param array        $variables
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function to($address, $name = "", array $variables = [])
     {
@@ -84,7 +84,7 @@ class Message
      * @param string       $name
      * @param array        $variables
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function cc($address, $name = "", array $variables = [])
     {
@@ -103,7 +103,7 @@ class Message
      * @param string       $name
      * @param array        $variables
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function bcc($address, $name = "", array $variables = [])
     {
@@ -131,7 +131,7 @@ class Message
      * @param string $address
      * @param string $name
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function replyTo($address, $name = "")
     {
@@ -145,7 +145,7 @@ class Message
      *
      * @param string $subject
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function subject($subject)
     {
@@ -160,7 +160,7 @@ class Message
      * @param string $path
      * @param string $name
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function attach($path, $name = '')
     {
@@ -191,7 +191,7 @@ class Message
      *
      * @param string|array $tags
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function tag($tags)
     {
@@ -209,7 +209,7 @@ class Message
      *
      * @param int|string|array $campaigns
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function campaign($campaigns)
     {
@@ -226,7 +226,7 @@ class Message
      *
      * @param bool $enabled
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function dkim($enabled)
     {
@@ -242,7 +242,7 @@ class Message
      *
      * @param bool|string $value
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function trackClicks($value)
     {
@@ -258,7 +258,7 @@ class Message
      *
      * @param bool $enabled
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function trackOpens($enabled)
     {
@@ -272,7 +272,7 @@ class Message
      *
      * @param bool|string $enabled
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function testmode($enabled = true)
     {
@@ -287,7 +287,7 @@ class Message
      * @param string $key
      * @param string $value
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function header($key, $value)
     {
@@ -302,7 +302,7 @@ class Message
      * @param string $key
      * @param mixed  $data
      *
-     * @return \Nmireac\Mailgun\Mail\Message
+     * @return \Nmirceac\Mailgun\Mail\Message
      */
     public function data($key, $data)
     {

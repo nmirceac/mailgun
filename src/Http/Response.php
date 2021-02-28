@@ -1,6 +1,6 @@
 <?php
 
-namespace Nmireac\Mailgun\Http;
+namespace Nmirceac\Mailgun\Http;
 
 use stdClass;
 

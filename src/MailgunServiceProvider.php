@@ -1,8 +1,8 @@
 <?php
 
-namespace Nmireac\Mailgun;
+namespace Nmirceac\Mailgun;
 
-use Nmireac\Mailgun\Contracts\Mailgun as MailgunContract;
+use Nmirceac\Mailgun\Contracts\Mailgun as MailgunContract;
 use Illuminate\Support\ServiceProvider;
 use Mailgun\Mailgun as MailgunApi;
 

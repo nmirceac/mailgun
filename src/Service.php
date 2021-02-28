@@ -1,9 +1,9 @@
 <?php
 
-namespace Nmireac\Mailgun;
+namespace Nmirceac\Mailgun;
 
-use Nmireac\Mailgun\Contracts\Mailgun as MailgunContract;
-use Nmireac\Mailgun\Mail\Mailer;
+use Nmirceac\Mailgun\Contracts\Mailgun as MailgunContract;
+use Nmirceac\Mailgun\Mail\Mailer;
 use Closure;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\View\Factory;
@@ -28,7 +28,7 @@ class Service implements MailgunContract
     protected $config;
 
     /**
-     * @var \Nmireac\Mailgun\Mail\Mailer
+     * @var \Nmirceac\Mailgun\Mail\Mailer
      */
     protected $mailer;
 
@@ -52,7 +52,7 @@ class Service implements MailgunContract
      * @param array    $data
      * @param \Closure $callback
      *
-     * @return \Nmireac\Mailgun\Http\Response
+     * @return \Nmirceac\Mailgun\Http\Response
      */
     public function send($view, array $data, Closure $callback)
     {
@@ -63,7 +63,7 @@ class Service implements MailgunContract
      * @param string   $message
      * @param \Closure $callback
      *
-     * @return \Nmireac\Mailgun\Http\Response
+     * @return \Nmirceac\Mailgun\Http\Response
      */
     public function raw($message, Closure $callback)
     {
@@ -76,7 +76,7 @@ class Service implements MailgunContract
      * @param array     $data
      * @param \Closure  $callback
      *
-     * @return \Nmireac\Mailgun\Http\Response
+     * @return \Nmirceac\Mailgun\Http\Response
      */
     public function later($time, $view, array $data, Closure $callback)
     {
@@ -103,7 +103,7 @@ class Service implements MailgunContract
     /**
      * Get the Validator service.
      *
-     * @return \Nmireac\Mailgun\Validation\Validator
+     * @return \Nmirceac\Mailgun\Validation\Validator
      */
     public function validator()
     {

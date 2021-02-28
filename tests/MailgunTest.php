@@ -6,11 +6,11 @@ class MailgunTest extends MailgunTestCase
     /** @test */
     public function it_provides_the_mailgun_service()
     {
-        $provides = (new Nmireac\Mailgun\MailgunServiceProvider($this->app))->provides();
+        $provides = (new Nmirceac\Mailgun\MailgunServiceProvider($this->app))->provides();
         $this->assertEquals([
             'mailgun',
             'mailgun.public',
-            Nmireac\Mailgun\Contracts\Mailgun::class
+            Nmirceac\Mailgun\Contracts\Mailgun::class
         ], $provides);
     }
 
@@ -18,7 +18,7 @@ class MailgunTest extends MailgunTestCase
     public function it_registers_the_mailgun_service()
     {
         $service = $this->app->make('mailgun');
-        $this->assertInstanceOf(Nmireac\Mailgun\Service::class, $service);
+        $this->assertInstanceOf(Nmirceac\Mailgun\Service::class, $service);
     }
 
     /** @test */
@@ -31,14 +31,14 @@ class MailgunTest extends MailgunTestCase
     /** @test */
     public function it_registers_the_mailgun_contract()
     {
-        $service = $this->app->make(Nmireac\Mailgun\Contracts\Mailgun::class);
-        $this->assertInstanceOf(Nmireac\Mailgun\Service::class, $service);
+        $service = $this->app->make(Nmirceac\Mailgun\Contracts\Mailgun::class);
+        $this->assertInstanceOf(Nmirceac\Mailgun\Service::class, $service);
     }
 
     /** @test */
     public function it_registers_the_facade()
     {
-        $this->assertInstanceOf(Nmireac\Mailgun\Service::class, Mailgun::getFacadeRoot());
+        $this->assertInstanceOf(Nmirceac\Mailgun\Service::class, Mailgun::getFacadeRoot());
     }
 
     /** @test */
